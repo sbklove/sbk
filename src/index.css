@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-led-bg: #0B0F19;
+  --color-led-blue: #00E5FF;
+  --color-led-green: #00FF88;
+  --color-led-card: #111827;
+  --color-led-border: #1E293B;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Rajdhani', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom LED and futuristic effects */
+.led-dots {
+  background-image: radial-gradient(rgba(0, 229, 255, 0.15) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.led-dots-dense {
+  background-image: radial-gradient(rgba(0, 229, 255, 0.25) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
+.led-dots-green {
+  background-image: radial-gradient(rgba(0, 255, 136, 0.2) 1.2px, transparent 1.2px);
+  background-size: 10px 10px;
+}
+
+.led-grid-lines {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
+}
+
+.box-glow-blue {
+  box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.25);
+}
+
+.box-glow-green {
+  box-shadow: 0 0 25px -5px rgba(0, 255, 136, 0.25);
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.animate-scanline {
+  animation: scanline 8s linear infinite;
+}
+

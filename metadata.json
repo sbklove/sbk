@@ -1,0 +1,6 @@
+{
+  "name": "Technolite Display",
+  "description": "Commercial LED Display Solutions, Digital Signage, RGB Video Walls & Interactive Smart Boards",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
